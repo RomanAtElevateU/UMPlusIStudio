@@ -1,7 +1,9 @@
 function page() {
-  return (
-    <p>These are my photos.</p>
-  )
-}
-
-export default page
+    return (
+      <section class="flex items-center justify-center h-screen">
+      <p>These are my photos.</p>
+      </section>
+    )
+  }
+  
+  export default page

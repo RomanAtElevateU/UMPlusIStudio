@@ -10,13 +10,11 @@ import './globals.css'
 export default function RootLayout({ children }) {
   return (
     <html lang="en" class="text-gray-900 bg-gray-100 font-serif">
-       <header>
-        <Navbar />
-      </header>
-      <body>{children}</body>
-      <footer>
-        <Footer />
-      </footer>
+      <body>
+      <Navbar />
+{children}
+<Footer />
+</body>
     </html>
   )
 }

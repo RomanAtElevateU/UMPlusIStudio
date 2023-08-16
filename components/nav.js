@@ -3,8 +3,8 @@ import '../app/globals.css'
 
 function Navbar() {
   return (
-    <nav className="fixed-top w-full h-24 shadow-xl bg-white overflow-auto">
-    <div className="flex justify-between items-center h-full w-full px-4 2xl:px-16">
+    <header className="fixed-top w-full h-24 shadow-xl bg-white overflow-auto">
+    <nav className="flex justify-between items-center h-full w-full px-4 2xl:px-16">
 
       <Link className="ml-10 uppercase hover:border-b text-xl" href="../">UM+I Studio</Link>
 
@@ -25,8 +25,8 @@ function Navbar() {
         </ul>
       </div>
 
-    </div>
-  </nav>      )
+    </nav>
+  </header>      )
 }
 
 export default Navbar
