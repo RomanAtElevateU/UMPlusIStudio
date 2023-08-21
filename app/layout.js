@@ -9,7 +9,7 @@ import './globals.css'
  
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" class="text-gray-900 bg-gray-100 font-serif">
+    <html lang="en">
       <body>
       <Navbar />
 {children}
