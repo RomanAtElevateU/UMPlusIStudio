@@ -1,31 +1,61 @@
+'use client'
+import React, { useState } from 'react';
 import Link from 'next/link';
-import '../app/globals.css'
 
 function Navbar() {
-    return (
-        <header>
- <nav className="container flex flex-col lg:flex-row justify-between py-8 mx-auto bg-white overflow-hidden">
-                <div className="flex items-center space-x-8">
-                    <h3 className="text-2xl font-medium text-grey-500">U+MI Studio</h3>
-                </div>
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-                {/* Mobile Menu */}
-                <div className="lg:hidden flex flex-col items-left space-y-4 py-8">
-                    <Link href="/">Home</Link>
-                    <Link href="/about">About Us</Link>
-                    <Link href="/services">Services</Link>
-                    <Link href="/gallery">Gallery</Link>
-                    <Link href="/contact">Contact Us</Link>
-                </div>
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
 
-                <div className="hidden lg:flex items-center space-x-8">
-                    <Link href="/">Home</Link>
-                    <Link href="/about">About Us</Link>
-                    <Link href="/services">Services</Link>
-                    <Link href="/gallery">Gallery</Link>
-                    <Link href="/contact">Contact Us</Link>
-                </div>
+  return (
+    <header>
+      <nav className="container flex flex-col lg:flex-row justify-between py-8 mx-auto bg-white overflow-hidden">
+        <div className="flex items-center space-x-8">
+          <h3 className="text-2xl font-medium text-grey-500">U+MI Studio</h3>
+        </div>
 
+        {/* Mobile Menu */}
+        <div className="lg:hidden flex flex-col items-left space-y-4 py-8">
+          <button
+            className="focus:outline-none"
+            onClick={toggleMobileMenu}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </button>
+          {isMobileMenuOpen && (
+            <div className="flex flex-col items-left space-y-4 py-8">
+              <Link href="/">Home</Link>
+              <Link href="/about">About Us</Link>
+              <Link href="/services">Services</Link>
+              <Link href="/gallery">Gallery</Link>
+              <Link href="/contact">Contact Us</Link>
+            </div>
+          )}
+        </div>
+
+        {/* Desktop Menu */}
+        <div className="hidden lg:flex items-center space-x-8">
+          <Link href="/">Home</Link>
+          <Link href="/about">About Us</Link>
+          <Link href="/services">Services</Link>
+          <Link href="/gallery">Gallery</Link>
+          <Link href="/contact">Contact Us</Link>
+        </div>
                 <div className="flex items-center space-x-8">
 
                 <a href="#">

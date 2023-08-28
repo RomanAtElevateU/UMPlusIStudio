@@ -2,9 +2,9 @@ import React from 'react';
 
 function ServicesPage() {
   return (
-    <section className="flex">
-      <div className="w-1/2 bg-header bg-cover bg-center"></div>
-      <div className="w-1/2 font-serif leading-normal py-12 px-4 max-w-lg m-auto">
+    <section className="flex flex-col md:flex-row">
+      <div className="md:w-1/2 bg-header bg-cover bg-center"></div>
+      <div className="md:w-1/2 font-serif leading-normal py-12 px-4 max-w-lg mx-auto">
         <header className="mx-4 p-4 text-center md:p-8">
           <h1 className="text-5xl uppercase">Services</h1>
           <p className="text-lg">U+MI Studio</p>

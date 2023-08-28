@@ -2,10 +2,10 @@ import React from 'react';
 
 function Page() {
   return (
-    <section className="flex">
-      <div className="w-1/2 bg-header bg-cover bg-center h-screen"></div>
-      <div className="w-1/2 font-serif leading-normal py-12 px-4 max-w-lg m-auto">
-        <header className=" mx-4 p-4 text-center margin-auto md:p-8">
+    <section className="flex flex-col md:flex-row">
+      <div className="md:w-1/2 bg-header bg-cover bg-center md:h-screen"></div>
+      <div className="md:w-1/2 font-serif leading-normal py-12 px-4 max-w-lg mx-auto">
+        <header className="mx-4 p-4 text-center md:p-8">
           <h1 className="text-5xl uppercase">About Us</h1>
           <p className="text-lg">U+MI Studio</p>
         </header>
