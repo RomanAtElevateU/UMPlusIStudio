@@ -4,20 +4,29 @@ import '../app/globals.css'
 function Navbar() {
     return (
         <header>
-<nav class="container flex justify-between py-8 mx-auto bg-white overflow-hidden"> 
-            <div class="flex items-center space-x-8">
-                <h3 class="text-2xl font-medium text-grey-500">UM+I Studio</h3>
-            </div>
+ <nav className="container flex flex-col lg:flex-row justify-between py-8 mx-auto bg-white overflow-hidden">
+                <div className="flex items-center space-x-8">
+                    <h3 className="text-2xl font-medium text-grey-500">U+MI Studio</h3>
+                </div>
 
-            <div class="items-center hidden space-x-8 lg:flex">
-                <a href="/">Home</a>
-                <a href="/about">About Us</a>
-                <a href="/services">Services</a>
-                <a href="/gallery">Gallery</a>
-                <a href="/contact">Contact Us</a>
-            </div>
+                {/* Mobile Menu */}
+                <div className="lg:hidden flex flex-col items-left space-y-4 py-8">
+                    <Link href="/">Home</Link>
+                    <Link href="/about">About Us</Link>
+                    <Link href="/services">Services</Link>
+                    <Link href="/gallery">Gallery</Link>
+                    <Link href="/contact">Contact Us</Link>
+                </div>
 
-            <div class="flex items-center space-x-8">
+                <div className="hidden lg:flex items-center space-x-8">
+                    <Link href="/">Home</Link>
+                    <Link href="/about">About Us</Link>
+                    <Link href="/services">Services</Link>
+                    <Link href="/gallery">Gallery</Link>
+                    <Link href="/contact">Contact Us</Link>
+                </div>
+
+                <div className="flex items-center space-x-8">
 
                 <a href="#">
                     <svg

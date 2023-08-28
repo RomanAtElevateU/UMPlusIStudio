@@ -3,7 +3,7 @@ import Footer from "@components/footer"
 import './globals.css'
  
  export const metadata = {
-  title: 'UM+I Studio',
+  title: 'U+MI Studio',
   description: 'This is a portfolio to showcase my photography studio.',
 }
  

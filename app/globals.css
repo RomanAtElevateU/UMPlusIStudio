@@ -2,10 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@400;600&display=swap');
+
 body {
-  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
-    'Arial', sans-serif;
-  padding: 20px 20px 60px;
-  max-width: 85em;
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
   margin: 0 auto;
 }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bg-header {
+  background: url(/Wedding-143.jpg) center/cover fixed;
+}
+
+.bg-quote {
+  background: url(/Our\ Wedding\ 4_-37.jpg) center/cover fixed;
+}
+
+.text-header {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+  padding: 40px 0;
+}
+
+.text-quote {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+/* Additional Tailwind classes can be added as needed */
